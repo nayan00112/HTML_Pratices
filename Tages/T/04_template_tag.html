@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template tag</title>
+</head>
+<body>
+    <!-- https://www.javatpoint.com/html-template-tag -->
+    <template id="mytemplate">
+        <h1>Hello</h1>
+        <p>Hello all</p>
+    </template>
+    <button onclick="clickme()">Click me!</button>
+    <script>
+        function clickme(){
+            var x= document.getElementsByTagName('template')[0];
+            var clon = x.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+</body>
+</html>

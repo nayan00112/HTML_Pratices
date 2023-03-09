@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optgroup Tag</title>
+</head>
+
+<body>
+    <h1>HTML &lt;optgroup&gt; tag</h1>
+    <p>
+        HTML &lt;optgroup&gt; tag is used to group releted &lt;option&gt; in a drop down list within &lt;select&gt;
+        element.
+    </p>
+    <p>
+        Using &lt;optgroup&gt; tag with &lt;select&gt; makes easier to access the dropdown list especially if list has
+        large number of options.
+    </p>
+
+    <h2>
+        Example:
+    </h2>
+    <form action="">
+        <select name="name" id="name" style="background-color: black; color: aliceblue;">
+            <option value="Day">Day</option> 
+            <optgroup lable="lucky Days" style="color:aqua;"> 
+                <!-- DOUBT -->
+                <!-- where is lucky days is writtne in output??? -->
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+            </optgroup>
+            <optgroup lable="more lucky Days" style="color:greenyellow;">
+                <option value="thuesday">Thuesday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </optgroup>
+
+        </select>
+    </form>
+</body>
+
+</html>

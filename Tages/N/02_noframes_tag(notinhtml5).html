@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noframe tag || Not supported in html5</title>
+</head>
+
+<body>
+    <div class="cont">
+        <!-- not work or... in my pc! or somthing else may be... -->
+        <h1>HTML &lt;noframes&gt;</h1> tag (Not supported in html5)
+        <p>
+            HTML &lt;noframes&gt;</h1> tag is used to contain an alternative text to display if the browser does not
+            support the &lt;frame&gt; contain.
+            It will only work, if the browser does not supported not the frame else, It will be ignored by the browser.
+
+        </p>
+        <p>
+            The &lt;noframes&gt; tag should be used within &lt;noframes&gt; element.
+        </p>
+    </div>
+
+    <frameset cols="35%, 65%">
+        <frame src="https://www.wikipedia.org/">
+            <frame src="https://www.facebook.com/">
+                <noframes>Sorry! Your browser does not support frames...</noframes>
+    </frameset>
+
+</body>
+
+</html>

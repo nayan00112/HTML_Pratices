@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output tag</title>
+</head>
+
+<body>
+    <h1>
+        HTML &lt;output&gt; tag (newly added in html5)
+    </h1>
+    <p>
+        HTML &lt;output&gt; tag is used to display the result of some calculatoion (performed by javascript) or the
+        outcome of a
+        user action (such as input data a form element).
+    </p>
+    <p>
+        The &lt;output&gt; tag is a newly added tag and was introduced in HTML5.
+    </p>
+
+    <hr>
+    <h2>Example: 1</h2>
+    <p>Calculate the sum of the two number:</p>
+    <form name="addition" oninput="res.value=parseInt(a.value) + parseInt(b.value)">
+        <label for="a">First number:</label>
+        <input type="text" name="a">
+
+        <label for="b">Second number:</label>
+        <input type="text" name="b">
+
+        output is: <output name="res"></output>
+    </form>
+    <hr>
+
+    <h2>Example: 2</h2>
+    <p>Reverse String:</p>
+    <script>
+        function reversStringFun(stringData) {
+            var nstr = stringData.split('').reverse().join('');
+            
+            // Below code is not working...:)
+            // for (let index = ostr.length; index >= 0; index--) {
+            //     nstr = ostr[index-1];
+            // }
+            return nstr;
+        }
+    </script>
+    <form name="revStr" oninput="outputedString.value = reversStringFun(stringData.value)">
+        <label for="stringData"></label>
+        <input type="text" name="stringData" id="stringData">
+
+        <output name="outputedString"></output>
+    </form>
+
+
+</body>
+
+</html>

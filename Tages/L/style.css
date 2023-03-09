@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+    font-family:'Segoe UI';
+    color: darkblue;
+    margin: 10px;
+}
+h1, h2{
+    font-family: 'Agency FB';
+    color:indigo;
+    border: 2px blue solid;
+    padding: 8px;
+}
+p{
+    font-weight: 400;
+    border: 1px blue solid;
+    padding: 6px;
+}

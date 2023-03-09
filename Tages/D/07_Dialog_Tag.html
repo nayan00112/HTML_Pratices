@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Tag</title>
+    <!-- https://www.javatpoint.com/html-dialog-tag -->
+</head>
+
+<body>
+    <h1>Dialog Tag</h1>
+    <hr>
+    <p>Physics is the best subject.</p>
+    <dialog id="dialogid">
+        <p>This is dialog info.</p>
+        <input type="button" id="hidialog" value="Hide info">
+    </dialog>
+    <input type="button" id="midialog" value="More info">
+
+    <script>
+        (function () {
+            var dialog = document.getElementById('dialogid');
+            document.getElementById('midialog').onclick = function () {
+                dialog.show();
+            }
+            document.getElementById('hidialog').onclick = function () {
+                dialog.close();
+            }
+
+        })();
+    </script>
+</body>
+
+</html>

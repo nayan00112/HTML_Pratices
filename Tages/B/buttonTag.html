@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function JSfunction() {
+            document.getElementsByTagName('h1')[0].style.background = 'blue';
+        }
+    </script>
+
+    <title>B Tag</title>
+</head>
+
+<body>
+    <h1 style="background:red; color: antiquewhite;">Button Tag</h1>
+    <p>
+        The button tag is used to create a clickable button within HTML form on your webpage.
+        <br>
+        You can put content like text or image within the button tag.
+    </p>
+    <p>
+        You should always specify the type attribute for a button tag. <br>
+        Different browser used different default type for the button element.
+    </p>
+    <p>
+        HTML Button tag can be used inside and outside the form.
+    </p>
+    <p>
+        If you use it inside the form, it works as the submit button. You can use it as reset button.
+    </p>
+    <p>
+        If you use it outside the form, you can call JavaScript function on it.
+    </p>
+
+    <br><br>
+    <br><br>
+
+    <!-- Outside the form  -->
+    <button onclick="JSfunction()">JSFun</button>
+
+    <br><br>
+    <br><br>
+    <!-- Inside the form -->
+    <form action="" method="get">
+        <label for="name">name</label>
+        <input type="text" name="name">
+        <br>
+
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <br>
+
+        <button type="submit">submit</button>
+        <br>
+        <button type="reset">reset</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: cornsilk;
+}
+div{
+    font-weight: 500;
+    font-family: 'Segoe UI';
+}
+.cont{
+    margin: auto;
+    padding: 12px;
+    border: 2px darkgreen solid;
+    width: 720px;
+    
+}
+h1, h2{
+    font-family: 'Agency FB';
+    font-weight: 600;
+    color: darkgreen;
+}
+hr{
+    border-top: 2px;
+    border-color: darkgreen;
+}

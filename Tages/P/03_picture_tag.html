@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture tag</title>
+</head>
+
+<body>
+    <h1>
+        HTML &lt;picture&gt; tag
+    </h1>
+    <p>HTML &lt;picture&gt; tag is used in responsive web designing where we need to load the different images based on
+        their viewpoint, hight, width, orientation and pixel density.</p>
+    <p>
+        The &lt;picture&gt; tag contains one or more &lt;source&gt; element and one &lt;img&gt; element.
+    </p>
+    <p>
+        According to the viewport, the matching image will be loaded from different &lt;source&gt; tag, and if no source
+        contains the matching image, then the default image present in &lt;img&gt; tag will be displayed on the browser.
+    </p>
+    <p>
+        The tag is new tag in html5
+    </p>
+
+    <h2>
+        Example:
+    </h2>
+    <picture>
+        <source srcset="03img1.png" media="(min-width:1100px)">
+        <source srcset="03img2.png" media="(min-width:600px)">
+        <img src="03img0.png" alt="img">
+    </picture>
+</body>
+
+</html>

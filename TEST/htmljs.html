@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mybut() {
+            document.getElementsByName('output')[0].innerHTML = document.getElementsByName('div1')[0].innerHTML
+        }
+    </script>
+</head>
+
+<body>
+    <div name="div1">
+        <div name="div2">
+            <h2 name="title">title</h2>
+        </div>
+        <div name="info">
+            <p name="infopra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias facilis eaque aspernatur?
+            </p>
+        </div>
+    </div>
+<button onclick="mybut()">Click me!</button>
+    <div name="output"></div>
+</body>
+
+</html>

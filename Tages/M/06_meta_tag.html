@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="refresh" content="10">
+    <meta name="author" content="Nayan">
+    <meta name="keyword" content="meta tag tutorial, meta tag, meta tag documentation">
+    <meta name="documentation" content="html meta tag tutorial">
+    <meta name="refresh" content="3;url=https://www.youtub.com/">
+
+
+    <title>Meta tag</title>
+    <style>
+        body {
+            margin-top: 20px;
+            padding: 12px;
+            margin: auto;
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            width: 800px;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            color: darkblue;
+        }
+
+        .cont {
+            border-left: 4px darkblue solid;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 139, 0.07);
+            padding: 12px;
+            padding-left: 25px;
+        }
+
+        kbd {
+            display: block;
+            border: 1px blue solid;
+            padding: 6px;
+            border-left:3px blue solid ;
+            color: rgba(0, 0, 0, 0.8);
+            border-radius: 4px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        ul>li::marker{
+            color: darkblue;
+        }
+        
+        ol{
+            width: 92%;
+            margin: auto;
+            padding-left: 0px;
+        }
+
+        ol>li::marker{
+            color: darkblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+
+        <!-- https://www.javatpoint.com/html-meta-tag -->
+
+        <h1>
+            Meta Tag
+        </h1>
+        <p>
+            HTML &lt;meta&gt; tag is used to represent the metadata about the html document. It specifies page
+            description,
+            keyword, copyright, language, author of the documents, etc.
+        </p>
+        <p>
+            The metadata does not display on the webpage, but it is used by search engines, browsers and other web
+            services
+            which scan the site or webpage to know about the webpage.
+        </p>
+        <p>With the help of meta tag, you can experiment and priview that how your webpage will render on the browser.
+        </p>
+        <p>
+            The meta tag is placed within the head tag, and it can be used more then one times in a document.
+        </p>
+        <h3>Syntax:</h3>
+        <kbd>&lt;meta charset="utf-8"&gt;</kbd>
+        <h3>
+            Following are some specification about the HTML &lt;meta&gt; tag:
+        </h3>
+        <ul>
+            <li>
+                <b>Display:</b> None
+            </li>
+            <li>
+                <b>Start tag/End tag:</b> Empty Tag (Only Start Tag)
+            </li>
+            <li>
+                <b>Usage:</b> Document Structural
+            </li>
+        </ul>
+        <div>
+            <h3>
+                Following are some specific syntex of meta tag which shows the different uses of meta Tag.
+            </h3>
+            <ol>
+                <li>It defined the character encoding. The value of charset is "utf-8" which means it will support to display any language.</li>
+                <kbd>&lt;meta charset="utf-8"&gt;</kbd>
+
+                <li>It is specifies the list of keyword which is used by search engines.</li>
+                <kbd>&lt;meta name="keywords" content="HTML, CSS, Javascript"&gt;</kbd>
+
+                <li>It defined the website description which is useful to provide relevant search performed by search engines.</li>
+                <kbd>&lt;meta name="description" content="Free Online Documentations"&gt;</kbd>
+
+                <li>It specifies the author of the page. It is useful to etract author information by contex management system automatically.</li>
+                <kbd>&lt;meta name="author" content="thisAuthor"&gt;</kbd>
+
+                <li>It specifies to provide instruction to the browser to automatically refresh the content after every 50 sec. (or any given time).</li>
+                <kbd>&lt;meta name="refresh" content="50"&gt;</kbd>
+
+                <li>In this below Example we have set a URL with content so it will automatically redirect to the given page after the provided time.</li>
+                <kbd>&lt;meta http-equiv="refresh" content="5;url=https://www.youtub.com/"&gt;</kbd>
+
+                <li>It specifies the view to control the page dimension and scalling so that our website looks good on all devices. If this tag is present, it include that this page is mobile devices supported.</li>
+                <kbd>&lt;meta name="viewport" content="width=device-width, initial-scale=0.1"&gt;</kbd>
+            </ol>
+        </div>
+
+    </div>
+</body>
+
+</html>
