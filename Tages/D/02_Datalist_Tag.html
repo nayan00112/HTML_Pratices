@@ -1,25 +1,21 @@
-<!-- NOT WORKING IN EDGE!!!!! -->
-
-
 <html>
+
 <head>
     <title>datalist tag</title>
 </head>
+
 <body>
-    
-<form action="" method="post">
-    <label for="SName">
-    <input type="text" name="Sname" id="SName">
-    <datalist for="SName">
-        <option value="RPPatel">
-        <option value="MPPatel">
-        <option value="HKV">
-        <option value="FZSchool">
-        <option value="JGGSchool">
-        <option value="SarasvatiSchool">
-        <option value="ASchool">
-    </datalist>
-</label>
-</form>
+
+    <form action="" method="post">
+
+        <label for="school">school name: </label>
+        <input list="listofschool" id="school" name="school">
+        <datalist id="listofschool">
+            <option value="RPPatel"></option>
+            <option value="SVP"></option>
+            <option value="HKV"></option>
+        </datalist>
+    </form>
 </body>
+
 </html>
